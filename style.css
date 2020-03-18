@@ -1,13 +1,21 @@
 .app {
-  height: 500px;
+height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .headings {
-
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .brush-selection {
   height: 70px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .paint {
@@ -16,9 +24,11 @@
 
 .palette {
   display: flex;
+  align-items: center;
 }
 
 .brush {
+
 
 }
 
@@ -34,29 +44,34 @@
 }
 
 .canvas {
-
+display: grid;
+grid-template-columns: repeat(10, 1fr) ;
+grid-template-rows: repeat(10, 1fr);
+height: 350px;
+width: 350px;
+border: 1px solid black;
 }
 
 .square {
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
-.color-1 {
+.color-1 { background-color: crimson;
 
 }
 
 .color-2 {
-
+background-color: darkorange;
 }
 
 .color-3 {
-
+background-color: yellow;
 }
 
 .color-4 {
-
+background-color: cyan;
 }
 
 .color-5 {
-
+background-color: rgb(250, 250, 250);
 }
