@@ -1,5 +1,5 @@
-const copyColor = function (anElement){
+const acquireColor = function (el){
 
-    return anElement.classlist[1];
+    return el.classlist[1];
 }
 
